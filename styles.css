@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Rock+Salt&display=swap');
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    background-size: cover;
+}
+h1 {
+    font-size: 5.1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: gold;
+  
+    font-family: "Honk", "Verdana";
+}
+
+.container {
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border: 3.5px solid #efeb85;
+    box-shadow: 0 0 28px #ff007b;
+    background: rgba(0, 0, 0, 0.8);
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+.word-display, .sentence-display, .favorite-display {
+    font-size: 2.4rem;
+    margin: 20px 0;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+button {
+    background-color: #150a0a;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 10px;
+    border-radius: 11px;
+    border: 2px solid #efeb85;
+    transition: background-color 0.2s ease-in-out;
+    
+}
+button:hover {
+    background-color: #ff007b;
+}
+
+.cashapp-btn {
+    background-color: #ff007b;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cashapp-btn:hover {
+    background-color: #00b528;
+  
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.8rem; /* Significantly reduced font size */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .word-display, .sentence-display, .favorite-display {
+        font-size: 1.4rem; /* Reduced font size */
+    }
+
+    button {
+        font-size: 1.2rem; /* Smaller button text */
+        padding: 10px 20px;
+    }
+
+    .cashapp-btn {
+        font-size: 14px; /* Reduced CashApp button text size */
+        padding: 12px 22px;
+    }
+}
+
+
+
+
+@media (max-width: 468px) {
+    h1 {
+        font-size: 2.5rem; /* Adjusting font size for smaller screens */
+        text-align: center;
+    }
+
+
+    .container {
+        width: 90%; /* Allow the container to take more space on smaller screens */
+        padding: 5px;
+    }
+
+    #generate-btn, #favorite-btn {
+        margin: 10px 0px;
+    }
+
+    .word-display, .sentence-display, .favorite-display {
+        font-size: 1.8rem; /* Make font size smaller for better readability */
+    }
+
+    button {
+        font-size: 1.3rem; /* Reduce button text size */
+        padding: 12px 2px;
+        width: 100%; /* Make buttons take up the full width */
+    }
+
+    .cashapp-btn {
+        font-size: 16px; /* Adjust size for smaller screens */
+        padding: 12px 22px;
+        width: 100%; /* Make CashApp button take up full width */
+    }
+}
+
+.material-symbols-outlined {
+    vertical-align: middle; /* Aligns the icon with the middle of the text */
+    margin-bottom: 2px;
+
+}
+
+
+
+/* Small Devices (phones, 600px and below) */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .word-display, .favorite-display {
+        font-size: 1.5rem;
+        word-wrap: break-word;
+    }
+    .cashapp-btn {
+        font-size: 16px;
+    }
+}
+
+/* Large Devices (Above 1024px) */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 5.1rem;
+    }
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+    button {
+        font-size: 1.4rem;
+        padding: 12px 25px;
+    }
+    .word-display, .favorite-display {
+        font-size: 2.5rem;
+    }
+}
